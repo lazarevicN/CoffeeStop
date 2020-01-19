@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coffee Stop</title>
+        <meta autor="Nikola Lazarevic" />
+        <meta name="keywords" content="Coffe, coffee, shop, cafeteria, Brazil, Kenya, Colombia, India, Ethiopia" />
+	    <meta name="description" content="Coffee Stop is a cafeteria placed in Belgrade, Serbia and Budimpest, Hungary. In our cafeteria, you can drink some of your favorite coffees and buy it from us in boxes. You can buy it online or in our cafeterias." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/logo.png" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+        <link rel="stylesheet" href="css/lightbox.min.css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href ="css/queris.css" type="text/css" />
+    </head>
+    <body>
+        <header id="zaglavlje">
+            <div id="prviDeoZaglavlja">
+                <div id="logo"><a href="#"><img src="img/logo.png" alt="logoSajta" /></a></div>
+                <div id="naziv">
+                    <h1><a href="#"><span id="razliciteBojeNaziva">Coffee</span>Stop</a></h1>
+                </div>
+                <div id="socijalneMreze">
+                </div>
+                <div id="dropdownMeni">
+                    <i class="fas fa-bars"></i>
+                    <div id="sakrijMeni">
+                    </div>
+                </div>
+            </div>
+            <div id="drugiDeoZaglavlja">
+            </div>
+        </header>
+        <div id="prvaPozadinskaSlika"></div>
+        <main>
+            <div id="about">
+                <header>
+                    <h2>About</h2>
+                </header>
+                <div>
+                    <p id="prviTekst">Before reaching your table, our coffee goes a long way. From plantations in the farthest corners of the globe, through the hands of farmers and fruit-pickers, to the roasting and finest grinding in our mills, and yet, every cup means just one fresh start to enjoying the day ahead. </p>
+                    <p id="drugiTekst">Although a very young brand, in less than three years proven quality and constant innovation, we have become one of the fastest growing cafeteria chains in Serbia, which in its range currently offers more than 15 unique types of coffee from all over the world, among which are very rare flavors, exclusive to this part of Europe. </p>
+                    <p id="treciTekst">Cafeteria guests can wake up each morning to the flavors of India or Brazil espresso, enhance productivity with the flavors of Colombia, Kenya or Ethiopia, enjoy specially prepared blends or end the day with decaffeinated beverages.</p>
+                </div>
+                <div id="aboutSlike">
+                    <img class="trenutnaSlika" src="img/aboutSlika.jpg" alt="Pravljenje kafe" />
+                    <img src="img/aboutSlika2.jpg" alt="Pravljenje kafe2" />
+                    <img src="img/aboutSlika3.jpg" alt="Pravljenje kafe3" />
+                </div>
+                <header >
+                    <h3>Right Coffee - The Key To The Best Taste!</h3>
+                </header>
+                <div>
+                    <p id="cetvrtiTekst">What makes our offer special is the fact that the process of roasting and then grinding takes place just before consumption, and quantities are always dosed, so that coffee that has traveled even from India, Kenya, Colombia or Brazil always has a fresh and distinctive taste . </p>
+                </div>
+            </div>
+            <div>
+                <div id="gallery">
+                    <header>
+                        <h2>Gallery</h2>
+                    </header>
+                </div>
+            </div>
+            <div id="ourCoffees">
+                <header>
+                    <h2>Our Coffees</h2>
+                </header>
+            </div>
+            <div>
+                <div id="orderCoffee">
+                    <header>
+                        <h2>Order Coffee</h2>
+                    </header>
+                    <div id="blokUKomeJeForma">
+                        <form action="" method="POST" id="forma">
+                            <div>
+                                <div>
+                                    <input type="text" id="name" placeholder="Write your name..."/>
+                                    <p class="error" id="greskaIme"></p>
+                                </div>
+                                <div>
+                                    <input type="text" id="last-name" placeholder="Write your last name..."/>
+                                    <p class="error" id="greskaPrezime"></p>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="email" id="email" placeholder="Write your email..." />
+                                <p class="error" id="greskaEmail"></p>
+                            </div>
+                            <div id="ddlIRadioButtoni">
+                                <div>
+                                    <select id="ddl"></select>
+                                    <p class="error" id="greskaDDL"></p>
+                                </div>
+                                <div id="RadioButtoni">
+                                    <label id="labelRBa">Choose type of delivery:</label>
+                                    <div id="RasporediRadioButtone">
+                                        <div><input type="radio" name="rb" value="freeShipping" /><span>Free Shipping(Delivery in 7 days)</span></div>
+                                        <div><input type="radio" name="rb" value="freeShipping" /><span>DHL(Delivery in 3 days, 2&euro;)</span></div>
+                                    </div>
+                                    <p class="error" id="greskaPosiljke"></p>
+                                </div>
+                            </div>
+                            <div id="blokSaTasterom">
+                                <p id="izbaciZahvalnicu"></p>
+                                <input type="button" id="taster" name="taster" value="Submit" />
+                                <div class="cleaner"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="author">
+                <header>
+                        <h2>Author</h2>
+                </header>
+                <div class="prikaziPoReduFlex">
+                    <div id="slikaAutora">
+                        <img src="img/autor.jpg" alt="autor" />
+                    </div>
+                    <div id="oAutoru">
+                        <p id="tekstOAutoru">Hello, my name is Nikola Lazarevic. I'm front end web developer who's using HTML (4 and 5), CSS(2 and 3), Javascript, Jquery and focuses on writing elegant, clean and efficient code. In addition to coding, I'm part designer who also focuses on UI/UX design. I'm studying at The ICT College of Applied Studies in Belgrade, Serbia. I came from a small town named Gornji Milanovac where I was a student at The Economically-comercial High School "Knjaz Milos". You can see some of my works <a href="file:///C:/Users/Admin/OneDrive/Desktop/Prva%20godina%20faksa/Web%20Dizajn/portfolio/index.html#" target="_blank">here.</a></p>
+                    </div>
+                </div>
+            </div>
+            <footer id="futer">
+                <div id="kontakt">
+                        <header class="pomeriOdGornjeiDonjeIviceHedereUFuteru">
+                            <h4>Contact us</h4>
+                        </header>                    
+                </div>
+                <div id="lokacija">
+                        <header class="pomeriOdGornjeiDonjeIviceHedereUFuteru">
+                            <h4>Location</h4>
+                        </header> 
+                </div>
+                <div id="socMrezeFutera">
+                    <header class="pomeriOdGornjeiDonjeIviceHedereUFuteru">
+                        <h4>Follow us</h4>
+                    </header> 
+                </div>
+                <div id="dokumentacija">
+                    <header class="pomeriOdGornjeiDonjeIviceHedereUFuteru">
+                        <h4>Documentation</h4>
+                    </header>
+                </div>
+            </footer>
+        </main>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
